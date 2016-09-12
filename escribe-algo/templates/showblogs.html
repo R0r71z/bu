@@ -1,0 +1,28 @@
+<!D0CTYPE html>
+<html>
+    <head>
+        <title>Blogs</title>
+        <h2><center><div style="color:green; background-color: black;">Pagina principal: escribe algo, please! :)</div></center></h2>
+        <a href="/newpost" style="float:right;">Manda uno nuevo!</a>
+        <div style="float:left; color:green;"><b>{{userinfo}}</b></div>
+    </head>
+    <br>
+    <br>
+    <body>
+        <form>
+            <center>
+                <div style="width:75%;height:auto;border:solid black 1px; padding:2px; background-color: darkorange; word-wrap: break-word">
+                    {%for e in blogs%}
+                        <h2>{{e.subject}}</h2><br>
+                        {{e.content.replace('\n', '<br>')}}
+                        <br>
+                        <br>
+                        <div style="text-align: right">{{e.created}}</div>
+                        <div style="text-align: left">Enviado por: {{e.autor}}</div>
+                        <hr>
+                    {%endfor%}
+                </div>
+            </center>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head><title>Login - Blog</title></head>
+	<h2>Iniciar sesion</h2>
+	<body>
+		<div style="display:block;background-color:green;width:10%;height:10%;text-align:left;padding:10px; float:right">
+			<b>No tienes cuenta?</b><br><br>
+			<button><a href="/signup">Registrate!</a></button>
+		</div>
+		<div style="display: block; background-color: black; color:white;width: 30%;height: 25%;text-align:left; padding:10px">
+			<form method="post">
+				<label><b>Tu usuario aqui<input style="float:right"type="text" name="username" value={{username}}></label>
+				<div style="color: red">{{failusername}}</div><br>
+				<label>Tu clave<input style="float:right"type="password" name="password" value={{password}}></label>
+				<div style="color:red">{{failpassword}}</div><br>
+				<input type="submit">
+			</form>
+		</div>
+	</body>
+
+</html>

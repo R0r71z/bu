@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head><title>Sign Up - Blog</title></head>
+		<h2>Registrate aqui</h2>
+	<body>
+		<div style="display:block;background-color:green;width:10%;height:10%;text-align:left;padding:10px;float:right">
+			<b>Ya tienes cuenta?</b><br><br>
+			<button><a href="/login">Autenticate!</a></button>
+		</div>
+		<div style="display:block; background-color: black;color:white; width: 30%; height:25%;text-align:left;padding:10px">
+			<form method="post">
+				<label><b>Tu usuario aqui<input style="float:right;"type="text" name="username" value={{username}}></label>
+				<div style="color:red">{{failusername}}</div><br>
+				<label>Tu clave aqui<input style="float:right;"type="password" name="password" value={{password}}></label>
+				<div style="color:red">{{failpassword}}</div><br>
+				<label>Ponla de nuevo<input style="float:right;"type="password" name="verify" value={{verify}}></label>
+				<div style="color:red">{{failverify}}</div><br>
+				<label>Tu correo (No e' obligao')<input style="float:right;"type="text" name="email" value={{email}}></label>
+				<div style="color:red">{{failemail}}</div><br>
+				<input type="submit"> 
+			</form>
+		</div>
+	</body>
+</hmtl>
